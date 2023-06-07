@@ -1,0 +1,14 @@
+<h3>The Cherecters RICK AND MORTY API</h3>
+<nav>
+  <a routerLink="/">Characters</a>
+  <a routerLink="/locations">Locations</a>
+</nav>
+<div *ngFor="let character of characters">
+  <h2>{{ character.name }}</h2>
+  <img [src]="character.image" alt="{{ character.name }}" />
+  <p>{{ character.status }}</p>
+  <p>{{ character.gender }}</p>
+  <p>{{ character.type }}</p>
+  <p>{{ character.location.name }}</p>
+</div>
+<router-outlet></router-outlet>
