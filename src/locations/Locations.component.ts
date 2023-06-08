@@ -6,9 +6,9 @@ import { RickAndMortyService } from '../services/RickAndMorty.Service';
 })
 export class LocationsComponent implements OnInit {
   locations: any;
-  constructor(private rickAndMortyService: RickAndMortyService) { }
+  constructor(private rickAndMortyService: RickAndMortyService) {}
   ngOnInit() {
-    this.rickAndMortyService.getLocations().subscribe(data => {
+    this.rickAndMortyService.getLocations().subscribe((data) => {
       this.locations = data.results;
     });
   }
