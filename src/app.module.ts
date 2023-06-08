@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: 'locations', component: LocationsComponent },
-  { path: '', component: CharactersComponent }
+  { path: 'characters', component: CharactersComponent }
 ];
 
 
